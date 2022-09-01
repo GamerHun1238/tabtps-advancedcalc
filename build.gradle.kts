@@ -3,7 +3,9 @@ plugins {
 }
 
 repositories {
-    maven { url "https://repo.dmulloy2.net/repository/public/" }
+    maven {
+      url = uri("https://repo.dmulloy2.net/repository/public/")
+    }
 }
 
 dependencies {
