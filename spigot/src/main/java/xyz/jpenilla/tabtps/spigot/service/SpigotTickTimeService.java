@@ -38,6 +38,8 @@ public final class SpigotTickTimeService implements TickTimeService {
   public double @NonNull [] recentTps() {
     String tps = "%spark_tps_5s%";
     tps = PlaceholderAPI.setPlaceholders(event.getPlayer(), tps);
-    return Double.parseDouble(tps);
+    double d = Double.parseDouble(tps);
+    double[] darray = new double[]
+    return darray;
   }
 }
