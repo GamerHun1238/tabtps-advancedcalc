@@ -30,13 +30,15 @@ import xyz.jpenilla.tabtps.common.service.TickTimeService;
 public final class PaperTickTimeService implements TickTimeService {
   @Override
   public double averageMspt() {
-    String tps = "%spark_tps_5s%";
-    tps = PlaceholderAPI.setPlaceholders(event.getPlayer(), tps);
-    return Double.parseDouble(tps);
+    return Bukkit.getAverageTickTime();
   }
 
   @Override
   public double @NonNull [] recentTps() {
-    return Bukkit.getTPS();
+    String tps = "%spark_tps_5s%";
+    tps = PlaceholderAPI.setPlaceholders(event.getPlayer(), tps);
+    double d = Double.parseDouble(tps);
+    double[] darray = new double[]
+    return darray;
   }
 }
