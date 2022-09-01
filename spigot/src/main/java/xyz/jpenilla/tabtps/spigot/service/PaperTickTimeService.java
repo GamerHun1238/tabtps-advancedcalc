@@ -32,7 +32,7 @@ public final class PaperTickTimeService implements TickTimeService {
   public double averageMspt() {
     String tps = "%spark_tps_5s%";
     tps = PlaceholderAPI.setPlaceholders(event.getPlayer(), tps);
-    Double.parseDouble(tps);
+    return Double.parseDouble(tps);
   }
 
   @Override
