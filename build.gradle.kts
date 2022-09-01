@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly group: "com.comphenix.protocol", name: "ProtocolLib", version: "4.7.0";
+    compileOnly("com.comphenix.protocol:ProtocolLib:4.7.0")
 }
 
 group = "xyz.jpenilla"
